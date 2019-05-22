@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="precoSize">22sp</dimen>
+    <dimen name="enderecoSize">14sp</dimen>
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="distanciaSize">18sp</dimen>
+    <dimen name="marginLados">20dp</dimen>
+    <dimen name="marginTop">15dp</dimen>
+    <dimen name="heightCard">97dp</dimen>
+    <integer name="maxLenghtCard">48</integer>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

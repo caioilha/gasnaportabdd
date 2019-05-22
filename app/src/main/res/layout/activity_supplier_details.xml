@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SupplierDetails">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/placeholder_map"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="-24dp">
+
+                <View
+                    android:id="@+id/hugeLine"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffc801" />
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/nome_fornecedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:text="Nome do Fornecedor"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <TextView
+                        android:id="@+id/endereco_fornecedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:text="Av Getúlio Vargas, nº1300\nBela Vista - Alvorada / RS" />
+                    <Button
+                        android:id="@+id/btnligar"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="170dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="14dp"
+                        android:backgroundTint="#00ce30"
+                        android:fontFamily="@font/roboto_bold"
+                        android:inputType="textCapWords"
+                        android:text="(51) 3044-0623"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:id="@+id/smallerLine1"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffc801" />
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="7dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto"
+                                android:text="P2"
+                                android:textColor="#777777"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/precoP2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:layout_gravity="left"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="R$23"
+                                    android:textColor="#3a455c"
+                                    android:textSize="@dimen/precoSize" />
+
+                                <TextView
+                                    android:id="@+id/precoP2Cents"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:paddingTop="4dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text=",00"
+                                    android:textColor="#3a455c"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#EEEEEE" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto"
+                                android:text="P13"
+                                android:textColor="#777777"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/precoP13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:layout_gravity="left"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="R$23"
+                                    android:textColor="#3a455c"
+                                    android:textSize="@dimen/precoSize" />
+
+                                <TextView
+                                    android:id="@+id/precoP13Cents"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:paddingTop="4dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text=",00"
+                                    android:textColor="#3a455c"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#EEEEEE" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto"
+                                android:text="P45"
+                                android:textColor="#777777"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/precoP45"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:layout_gravity="left"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="R$23"
+                                    android:textColor="#3a455c"
+                                    android:textSize="@dimen/precoSize" />
+
+                                <TextView
+                                    android:id="@+id/precoP45Cents"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:paddingTop="4dp"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text=",00"
+                                    android:textColor="#3a455c"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:id="@+id/smallerLine2"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffc801" />
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="7dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto"
+                                android:text="Previsão"
+                                android:textColor="#777777"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/previsao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="10-15m"
+                                android:textColor="#203c77"
+                                android:textSize="@dimen/precoSize" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#EEEEEE" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto"
+                                android:text="Pagamento"
+                                android:textColor="#777777"
+                                android:textSize="15sp" />
+
+
+                            <LinearLayout
+                                style="@style/Widget.CardContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="0dp"
+                                android:paddingTop="2dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="40dp"
+                                    android:layout_height="23dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/cartao" />
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="44dp"
+                                    android:layout_height="23dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/dinheiro" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#EEEEEE" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto"
+                                android:text="Avaliação"
+                                android:textColor="#777777"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/avaliacao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="4.5"
+                                android:textColor="#00ce30"
+                                android:textSize="@dimen/precoSize" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
