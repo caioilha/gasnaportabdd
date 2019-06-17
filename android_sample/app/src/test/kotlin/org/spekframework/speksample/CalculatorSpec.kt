@@ -9,7 +9,11 @@ object CalculatorSpec : Spek({
         val calculator by memoized { Calculator() }
 
         it("should return 4") {
+
             assertEquals(expected = 4, actual = calculator.add(2, 2))
+        }
+        it("should return 7") {
+            assertEquals(expected = 7, actual = calculator.add(2, 5))
         }
     }
 })
