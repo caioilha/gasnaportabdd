@@ -35,7 +35,6 @@ object SupplierSpec : Spek({
 
             supplier.supplier.address = ""
             assertEquals(expected = true, actual = supplier.addressIsBlank())
-
         }
 
         it("should have a phone") {
@@ -95,7 +94,6 @@ object SupplierSpec : Spek({
             Then("it should not be allowed to be added") {
                 assertEquals(false, result)
             }
-
         }
 
         Scenario("empty names should not validate") {
@@ -111,7 +109,6 @@ object SupplierSpec : Spek({
             Then("it should not be allowed to be added") {
                 assertEquals(false, result)
             }
-
         }
 
         Scenario("empty addresses should not validate") {
